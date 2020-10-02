@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Technology extends Model
 {
     use HasFactory;
+
+    public function users()
+    {
+    	return $this->morphToMany('User');
+    }
+
+    public function projects()
+    {
+    	return $this->morphToMany('Project');
+    }
 }

@@ -12,9 +12,14 @@ class Project extends Model
     use HasFactory;
     use HasTeams;
 
-    public function client()
+    public function user()
     {
     	return $this->belongsTo('User');
+    }
+
+    public function technologies()
+    {
+    	return $this->belongsTo('Technology');
     }
 
 

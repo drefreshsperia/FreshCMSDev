@@ -234,6 +234,7 @@ return [
         'Project' => App\Models\Project::class,
         'Team' => App\Models\Team::class,
         'User' => App\Models\User::class,
+        'Technology' => App\Models\Technology::class,
 
 
     ],

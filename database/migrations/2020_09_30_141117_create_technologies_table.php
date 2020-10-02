@@ -16,6 +16,11 @@ class CreateTechnologiesTable extends Migration
         Schema::create('technologies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('version')->nullable();
+            $table->text('notes')->nullable();
+            $table->string('docs')->nullable();
+            $table->dateTime('current_release_date')->nullable();
+            $table->dateTime('next_release_date')->nullable();
             $table->timestamps();
         });
     }
